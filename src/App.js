@@ -13,9 +13,21 @@ const Person = (props) => {
 const App = () => {
   return (
     <div className="App">
-      <Person fname='Jane' lname='Eyre' age={10 * 2} />
-      <Person fname='John' lname='Doe' age={10 + 12} />
-      <Person fname='Joy' lname='Reeves' age={49 / 2} />
+      <Person 
+        fname='Jane' 
+        lname='Eyre' 
+        age={10 * 2} 
+      />
+      <Person 
+        fname='John' 
+        lname='Doe' 
+        age={10 + 12} 
+      />
+      <Person 
+        fname='Joy' 
+        lname='Reeves' 
+        age={49 / 2} 
+      />
     </div>
   );
 }
