@@ -7,6 +7,14 @@ import SearchIcon from './search.svg'
 
 const API_URL = 'https://www.omdbapi.com?apikey=f322322d'
 
+const movie1 = {
+    Poster: "N/A",
+    Title: "Ultimate Avengers II",
+    Type: "movie",
+    Year: "2006",
+    imdbID: "tt0803093"
+}
+
 const App = () => {
 
     const searchMovies = async (title) => {
@@ -40,7 +48,16 @@ const App = () => {
             <div className="container">
                 <div className="movie">
                     <div>
+                        <p>{movie1.Year}</p>
+                    </div>
 
+                    <div>
+                        <img src={movie1.Poster !== 'N/A' ? movie1.Poster : 'https:/via.placeholder.com/400'} alt={movie1.Title} />
+                    </div>
+
+                    <div>
+                        <span>{movie1.Type}</span>
+                        <h3>{movie1.Title}</h3>
                     </div>
                 </div>
             </div>
